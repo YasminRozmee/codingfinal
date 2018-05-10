@@ -1,0 +1,240 @@
+body {
+  background: white;
+  text-align:center;
+  font-family:sans-serif;
+  margin:0;
+}
+
+p {
+  font-family: courier;
+}
+
+h1 {
+  color:#222a30;
+  font-family: 'Racing Sans One', cursive;
+  font-size: 60px;
+  
+}
+
+#canvas {
+  position: relative;
+  border-radius:5px;
+  cursor: url('pencill.png') 0, auto; 
+  
+}
+
+canvas {
+  background-image: url("backgroundimage.jpg");
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-attachment: local;
+
+}
+
+
+#save button {
+
+  font-family: 'VT323', monospace;
+  border:0;
+  background:#222a30;
+  color:#FFF;
+  padding:15px;
+  margin:0 10px;
+  font-size:18px;
+  border-radius:5px;
+  cursor:pointer; 
+  margin-bottom:25px;
+ 
+}
+
+
+#colorSelect {
+
+
+  padding:0;
+  list-style:none;
+  background:#e1e6ea;
+  background:rgba(211, 219, 232, .8);
+  position:fixed;
+  width:100%;
+  margin:0;
+  top:0;
+  display:none;
+
+}
+
+
+
+
+#colorSelect li {
+  height:30px;
+  width:50px;
+  border:2px solid #CCC;
+  margin:10px;
+  display:inline-block;
+  border-radius:50px;
+  cursor:pointer;
+}
+
+#colorSelect .selected {
+  border:4px solid #FFF;
+}
+
+#colorSelect .red {
+  background: red;
+}
+
+#colorSelect .green {
+  background: green;
+}
+
+#colorSelect .blue {
+  background: blue;
+}
+
+#colorSelect .pink {
+  background: pink;
+}
+
+
+#colorSelect .yellow {
+  background: yellow;
+}
+
+/**PICK NEW COLOR**/
+
+#colorSelection {
+  padding:15px 0;
+}
+
+#colorSelection button {
+  font-family: 'VT323', monospace;
+  border:0;
+  background:#222a30;
+  color:#FFF;
+  padding:15px;
+  margin:0 10px;
+  font-size:18px;
+  border-radius:5px;
+  cursor:pointer; 
+  margin-bottom:25px;
+}
+
+
+#changeImage {
+  font-family: 'VT323', monospace;
+  border:0;
+  background:#222a30;
+  color:#FFF;
+  padding:15px;
+  margin:0 10px;
+  font-size:18px;
+  border-radius:5px;
+  cursor:pointer;
+  margin-bottom:25px;
+}
+
+/**#colorSelection button:hover {
+  background:yellow;
+  color:#e1e6ea; **/
+
+/** this is for picking a new color. not using this currently  **/
+}
+
+#pickNewColor {
+  display:none;
+  background:#e1e6ea;
+  max-width:300px;
+  padding:15px 25px;
+  margin:0 auto;
+  color:#FFF;
+  border-radius:5px;
+}
+
+#pickNewColor h2 {
+  margin:0 0 25px;
+  padding:0 0 15px;
+  border-bottom:1px solid #CCC;
+}
+
+#pickNewColor #newColor {
+  display:inline-block;
+  height:75px;
+  width:75px;
+  background:#edeaea;
+  float:left;
+  border-radius:5px;
+}
+
+#pickNewColor p {
+  margin-left:100px;
+  text-align:left;
+}
+
+#pickNewColor input {
+  float:right;
+}
+
+#addNewColor {
+  background:#a3bfc6;
+  color:#222a30;
+  border:0;
+  text-transform:uppercase;
+  font-size:18px;
+  border-radius:5px;
+  padding:5px 10px;
+  margin:15px 0 10px;
+  cursor:pointer;
+}
+
+
+
+#addNewColor:hover {
+  background:yellow;
+}
+
+
+
+.book {
+  width: 320px;
+  margin: 140px;
+  font-size: 0;
+}
+.page {
+  display: inline-block;
+  width: 60px;
+  height: 80px;
+  position: relative;
+}
+.page:before, .page:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 14px;
+  border-radius: 50%;
+  position: absolute;
+
+}
+.firstPage:before {
+  background: #a92929;
+  top: -7px;
+}
+.secondPage:before {
+  background: red;
+  top: -7px;
+}
+.page:after {
+  background: #fff;
+  bottom: -7px;
+}
+.firstPage {
+  background: #a92929;
+}
+.secondPage {
+  background: red;
+
+
+
+
+
+
